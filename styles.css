@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  color: #333;
+  padding: 20px;
+}
+
+header {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 10px;
+  text-align: center;
+}
+
+nav {
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+}
+
+section {
+  margin-top: 20px;
+}
+
+h2 {
+  color: #2f4f4f;
+}
+
+form {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+  font-weight: bold;
+}
+
+form input, form select {
+  padding: 8px;
+  margin: 5px 0;
+  width: 100%;
+  max-width: 300px;
+}
+
+button {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4e6f6f;
+}
+
+#equipment-list {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#equipment-items {
+  list-style-type: none;
+}
+
+#equipment-items li {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+#equipment-items li:last-child {
+  border-bottom: none;
+}
+
+@media (max-width: 600px) {
+  form input, form select {
+    width: 100%;
+  }
+}
