@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Automated Equipment Checker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <h1>Automated Equipment Checker</h1>
+    <nav>
+      <a href="#add-equipment">Add Equipment</a>
+      <a href="#equipment-list">Equipment List</a>
+    </nav>
+  </header>
+
+  <!-- Add Equipment Form -->
+  <section id="add-equipment">
+    <h2>Add Equipment</h2>
+    <form id="equipment-form">
+      <label for="equipment-name">Equipment Name:</label>
+      <input type="text" id="equipment-name" name="equipment-name" required><br><br>
+      
+      <label for="equipment-condition">Condition:</label>
+      <select id="equipment-condition" name="equipment-condition" required>
+        <option value="Good">Good</option>
+        <option value="Needs Repair">Needs Repair</option>
+        <option value="Damaged">Damaged</option>
+      </select><br><br>
+      
+      <label for="equipment-image">Equipment Image:</label>
+      <input type="file" id="equipment-image" name="equipment-image" accept="image/*" required><br><br>
+
+      <button type="submit">Add Equipment</button>
+    </form>
+  </section>
+
+  <!-- Equipment List Section -->
+  <section id="equipment-list">
+    <h2>Equipment List</h2>
+    <ul id="equipment-items">
+      <!-- Dynamically populated list of equipment -->
+    </ul>
+  </section>
+
+  <script src="app.js"></script>
+</body>
+</html>
